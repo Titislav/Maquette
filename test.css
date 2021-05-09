@@ -1,0 +1,86 @@
+
+body
+{
+  background-color: purple;
+  min-height: 95vh;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+grid-template-rows: repeat(5,auto);
+  grid-gap: 10px;
+  grid-template-areas:  "icone_app"
+                        "frame"
+                        "quick_tool"
+                        "sidebar"
+                        "info_prog"
+}
+
+
+.box
+{
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.frame{
+grid-area: frame;
+padding:50px;
+background-color: grey;
+display:grid;
+grid-template-columns: 1,1fr;
+grid-template-rows: 1, auto);
+}
+
+
+
+.icone_app{
+background-color: blue;
+padding : 5 px;
+text-align: center;
+grid-area: icone_app;
+}
+
+.quick_tool{
+grid-area: quick_tool;
+background-color:  red;
+padding : 20px;
+}
+
+.sidebar{
+grid-area: sidebar;
+background-color: green;
+}
+
+.info_prog{
+  text-align: center;
+grid-area: info_prog;
+background-color: pink;
+
+}
+img{
+  height: 50px;
+}
+@media screen and (min-width: 768px)
+{
+  body
+  {
+    grid-template-columns: 100px;
+    grid-template-rows: 100px auto auto auto auto auto 50px ;
+    grid-template-areas:  "icone_app quick_tool quick_tool quick_tool quick_tool quick_tool quick_tool"
+                          "frame frame frame frame frame frame frame"
+                          "frame frame frame frame frame frame frame"
+                          "frame frame frame frame frame frame frame"
+                          "frame frame frame frame frame frame frame"
+                          "frame frame frame frame frame frame frame"
+                          "info_prog info_prog info_prog info_prog info_prog info_prog info_prog";
+  }
+  .sidebar{
+
+    position: absolute;
+    top: 130px;
+    width: 100px;
+    height: auto;
+  }
+}
