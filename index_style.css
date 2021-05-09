@@ -1,0 +1,26 @@
+body{
+  background-color: grey;
+  min-height: 95vh;
+  min-width: 95vw;
+  display:grid;
+  grid-template-columns: auto ;
+  grid-template-rows: 1fr;
+  grid-template-areas:  "acceuil ";
+}
+
+.acceuil{
+
+  grid-area: acceuil;
+  text-align: center;
+  background-color: cyan;
+
+
+}
+
+.bout{
+  position : absolute;
+  top :50vh;
+  right:50vw;
+  width: 100px;
+  height : 25px
+}

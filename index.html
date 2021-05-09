@@ -1,41 +1,19 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="test.css">
-<meta charset="UTF-8">
-<script src="jquery-3.6.0.js"></script>
-</head>
-
-<header class="icone_app">
-  logo
-</header>
-<body>
-  <nav class="quick_tool">
-    Menu raccourci rapide
-  </nav>
-  <main class="frame">
-     <div class="box">
-      Lettre a tracer
-     </div>
-   </main>
-
-  <aside class="sidebar">
-    menu latéral de navigation
-    <div id="item_sidebar1"> <button id="hide"> </button> </div>
-    <div class="item_sidebar2"><img src="CR2.png"></img></div>
-  </aside>
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Une page web</title>
+    <link rel="stylesheet" href="index_style.css">
+    <script src="jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <div class="acceuil">
 
 
-  <script>
+  <p>Bienvenue sur l'application</p>
+  <button class="bout", onclick="window.location.href='test_template.html';">COUCOU</button>
 
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $(".item_sidebar2").slideToggle();
-});
-});
-</script>
-</body>
-<footer class="info_prog">
-Information de progression
-</footer>
+  </div>
+  </body>
 </html>
