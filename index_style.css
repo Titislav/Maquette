@@ -21,3 +21,14 @@ body{
 
 
 }
+
+@media screen and (max-width: 1080px){
+  .acceuil{
+    display:grid;
+    grid-template-rows: 5% 30px 30px;
+
+  }
+  input{
+
+  }
+}
