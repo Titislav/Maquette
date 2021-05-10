@@ -13,14 +13,11 @@ body{
   grid-area: acceuil;
   text-align: center;
   background-color: cyan;
-
-
+  display: block;
 }
 
 .bout{
-  position : absolute;
-  top :50vh;
-  right:50vw;
-  width: 100px;
-  height : 25px
+
+
+
 }

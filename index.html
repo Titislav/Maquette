@@ -13,7 +13,17 @@
 
   <p>Bienvenue sur l'application</p>
   <button class="bout", onclick="window.location.href='test_template.html';">COUCOU</button>
-
+  <input type="button" id="but_audio" name="audio" value="LE SON">
   </div>
+
+  <script>
+    $(document).ready(function(){
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src','cool.mp3');
+      $('#but_audio').click(function(){
+          audioElement.play();
+      });
+    });
+  </script>
   </body>
 </html>
