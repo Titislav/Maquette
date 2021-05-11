@@ -25,7 +25,7 @@ body{
 @media screen and (max-width: 1081px){
   .acceuil{
     display:grid;
-    grid-template-rows: 5% 30vh 30vh;
+    grid-template-rows: 5% 30vh 30vh auto;
 
   }
   input{
