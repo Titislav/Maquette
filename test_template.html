@@ -3,7 +3,13 @@
 <head>
 <link rel="stylesheet" href="test.css">
 <meta charset="UTF-8">
-<script src="jquery-3.6.0.js"></script>
+
+<script src="node_modules\jquery\dist\jquey.js"></script>
+<script type="text/javascript" src="node_modules\vue\dist\vue.min.js"></script>
+<script type="text/javascript" src="node_modules\vue-slide-up-down\dist\vue-slide-up-down.umd.js"></script>
+<script type="text/javascript">
+  Vue.component('vue-slide-up-down', VueSlideUpDown);
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -20,23 +26,35 @@
      </div>
    </main>
 
-  <aside class="sidebar">
-    menu latéral de navigation
-    <div id="item_sidebar1"> <button id="hide"> </button> </div>
-    <div class="item_sidebar2"><img src="CR2.png"></img></div>
-  </aside>
 
 
-  <script>
 
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $(".item_sidebar2").slideToggle();
-});
-});
-</script>
 </body>
 <footer class="info_prog">
 Information de progression
 </footer>
+
+<script>
+
+$(document).ready(function(){
+$("#hide").click(function(){
+  $(".item_sidebar2").slideToggle();
+});
+});
+</script>
+<script type="text/javascript">
+new Vue({
+  el: '.sidebar',
+
+  data: () => ({
+    active: true,
+  }),
+  methods: {
+    toggle () {
+      this.active = !this.active;
+    }
+  }
+})
+
+</script>
 </html>

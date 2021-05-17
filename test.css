@@ -10,8 +10,8 @@ body
   grid-gap: 10px;
   grid-template-areas:  "icone_app"
                         "frame"
+                        "frame"
                         "quick_tool"
-                        "sidebar"
                         "info_prog";
 }
 
@@ -51,10 +51,11 @@ padding : 20px;
 .sidebar{
 grid-area: sidebar;
 background-color: green;
+
 }
 
 .info_prog{
-  text-align: center;
+text-align: center;
 grid-area: info_prog;
 background-color: pink;
 
@@ -62,6 +63,24 @@ background-color: pink;
 img{
   height: 50px;
 }
+
+
+#hide{
+    padding : 1em;
+    cursor:pointer;
+}
+.togglebutton{
+    padding : 1em;
+    background-color:#2196F3;
+    color:#FFF;
+    cursor:pointer;
+}
+.element {
+  padding : 1em;
+  background-color:#B3E5FC;
+}
+
+
 @media screen and (min-width: 768px)
 {
   body
