@@ -16,21 +16,30 @@ body
 }
 
 
-.box
+.box2
 {
   background: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
+  grid-column: 2;
 }
 
+.box1{
+  grid-column: 1;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 .frame{
 grid-area: frame;
 padding:50px;
 background-color: grey;
 display:grid;
 grid-template-columns: 1,1fr;
-grid-template-rows: 1, auto);
+grid-template-rows: 1;
+grid-gap: 10px;
 }
 
 
