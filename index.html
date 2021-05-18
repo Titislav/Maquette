@@ -14,18 +14,14 @@
 
   <div><p>Bienvenue sur l'application</p></div>
   <input class="bout", type="button", value="COUCOU" onclick="window.location.href='test_template.html';">
-  <input type="button" id="but_audio" name="audio" value="LE SON">
+  <input type="button" id="but_audio" name="audio" value="LE SON" onclick=audioElement.play() >
   <input type="button" name="plan" onclick="window.location.href='Arbo.svg';" value="L'arborescence :o">
   </div>
 
   <script>
-    $(document).ready(function(){
     var audioElement = document.createElement('audio');
     audioElement.setAttribute('src','cool.mp3');
-      $('#but_audio').click(function(){
-          audioElement.play();
-      });
-    });
+
   </script>
   </body>
 </html>
