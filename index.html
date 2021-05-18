@@ -16,11 +16,15 @@
   <input class="bout", type="button", value="COUCOU" onclick="window.location.href='test_template.html';">
   <input type="button" id="but_audio" name="audio" value="LE SON" onclick=audioElement.play() >
   <input type="button" name="plan" onclick="window.location.href='Arbo.svg';" value="L'arborescence :o">
+  <input type="button" name="plan" onclick=window.speechSynthesis.speak(msg) value="SYNTHESE">
   </div>
 
   <script>
     var audioElement = document.createElement('audio');
     audioElement.setAttribute('src','cool.mp3');
+    var msg = new SpeechSynthesisUtterance();
+    msg.text = "TEST SYNTHèSE";
+
 
   </script>
   </body>
